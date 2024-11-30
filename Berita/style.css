@@ -1,0 +1,266 @@
+* {
+  font-family: "Poppins";
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-brand span {
+  color: navy;
+}
+
+/* Login Page */
+.popup-login {
+  position: fixed;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 373px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup-login.active {
+  z-index: 10;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup-login .btn-close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #888;
+  text-align: center;
+}
+
+.header h1 {
+  color: #000;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.header span {
+  color: #737373;
+  font-size: 14px;
+}
+
+.header span a {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.login-form label {
+  color: #000;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.login-form input {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  background: #fff;
+
+  color: #737373;
+  font-size: 16px;
+}
+
+.login-form a {
+  color: #737373;
+  font-size: 14px;
+  margin: 20px 0;
+  display: block;
+}
+
+.login-form .signin {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  background: navy;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.login-form .signin-google {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  background: #fff;
+
+  color: #737373;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px 0 20px 0;
+}
+
+/* Daftar Form */
+.popup-daftar {
+  position: fixed;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 373px;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup-daftar.active {
+  z-index: 10;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup-daftar .btn-close {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  color: #888;
+  text-align: center;
+}
+
+.daftar-form label {
+  color: #000;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.daftar-form input {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  background: #fff;
+
+  color: #737373;
+  font-size: 16px;
+}
+
+.daftar-form .selanjutnya {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: none;
+  background: navy;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.daftar-form p {
+  text-align: center;
+  color: #737373;
+  font-size: 14px;
+  margin: 20px 0;
+  display: block;
+  cursor: default;
+}
+
+.daftar-form .signin-google {
+  /*rectangle*/
+  width: 312px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  background: #fff;
+
+  color: #737373;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px 0 20px 0;
+}
+
+.banner {
+  height: 285px;
+  width: 100%;
+  background-image: url(/img/banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .text {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.banner .cari-berita {
+  /*rectangle*/
+  width: 450px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #BCBCBC;
+  background: #FFF;
+
+  color: #737373;
+  font-size: 16px;
+}
+
+section {
+  padding: 50px 200px;
+  width: 100%;
+}
+
+.card span {
+  font-weight: 600;
+}

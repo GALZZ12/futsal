@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SL Stadium Pontianak - LapanganKita</title>
+        <!-- Bootstrap 5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+        <!-- Style Kami -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/img/Brand.png" alt="Logo" width="30" height="28"
+                        class="d-inline-block align-text-top">
+                    <span>L</span>apanganK<span>i</span>ta
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="/Sewa">Sewa Lapangan</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Kompetisi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="/Kompetisi/Cari">Cari Kompetisi</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/Kompetisi/Buat">Buat Kompetisi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Berita">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Toko">Toko</a>
+                        </li>
+                    </ul>
+                    <div class="button-container">
+                        <button type="button" class="btn btn-light" id="login">Masuk</button>
+                        <button type="button" class="btn btn-dark" id="daftar">Daftar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login Form -->
+        <div class="popup-login">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="header">
+                <h1>Masuk</h1>
+                <span class="d-inline">Belum punya Akun? <a href="#"
+                        class="d-inline text-decoration-none">Daftar</a></span>
+            </div>
+            <div class="login-form">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email"
+                    placeholder="Masukkan email">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password"
+                    placeholder="Masukkan password">
+                <a href="#" class="text-decoration-none text-center">Lupa
+                    Password</a>
+                <button class="signin">Masuk</button>
+                <button class="signin-google"><img src="/img/google.png"> Masuk
+                    dengan Google</button>
+            </div>
+        </div>
+
+        <!-- Daftar Form -->
+        <div class="popup-daftar">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="header">
+                <h1>Daftar</h1>
+                <span class="d-inline">Sudah punya Akun? <a href="#"
+                        class="d-inline text-decoration-none">Masuk</a></span>
+            </div>
+            <div class="daftar-form">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email-daftar"
+                    onkeyup="checkInput()" placeholder="Masukkan email">
+                <button class="selanjutnya" id="selanjutnya">Selanjutnya</button>
+                <p>atau</p>
+                <button class="signin-google"><img src="/img/google.png"> Daftar
+                    dengan Google</button>
+            </div>
+        </div>
+
+        <div class="photo-group">
+            <div class="row">
+                <div class="solo col-sm-5 col-md-8">
+                    <img class="ft1" src="/Sewa/img/foto1.png" alt="Foto 1">
+                </div>
+                <div class="duo col-sm-5 col-md-4">
+                    <img class="ft2" src="/img/foto2.jpg" alt="Foto 2">
+                    <img class="ft3" src="/img/foto3.jpg" alt="Foto 3">
+                </div>
+            </div>
+        </div>
+
+        <section class="desc">
+            <div class="row">
+                <div class="col-sm-5 col-md-8">
+                  <div class="content">
+                    <h3>SL Stadium Pontianak</h3>
+                    <hr>
+                    <p style="line-height: 1.2;"><small>SL STADIUM adalah lapangan futsal premium dan ada juga lapangan badminton. Yang berlokasi di Sidoarjo, Jawa Timur. Lapangan ini memiliki lantai berbahan dasar interlock yang berkualitas tinggi dan memiliki ukuran standar internasional, yaitu 42 meter x 21 meter. Dengan lantai yang kokoh dan lapangan yang sesuai dengan standar internasional, SL STADIUM cocok untuk digunakan oleh para pemain futsal yang ingin bermain dalam lingkungan yang aman dan nyaman. Selain itu, lapangan ini juga dilengkapi dengan fasilitas lengkap seperti tribun untuk penonton, ruang ganti untuk pemain, dan kantin untuk memenuhi kebutuhan makan dan minum. Lapangan futsal SL STADIUM juga memiliki pencahayaan yang baik, sehingga dapat digunakan untuk bermain futsal pada malam hari. Dengan lokasinya yang strategis, yaitu di pusat kota Sidoarjo, lapangan ini mudah diakses oleh masyarakat dan menjadi pilihan utama bagi para pecinta futsal untuk bermain dan berlatih. SL STADIUM juga sering menjadi tempat diselenggarakannya turnamen futsal lokal dan regional dengan standar internasional. Dengan pengelolaan yang profesional dan fasilitas yang memadai, SL STADIUM siap memberikan pengalaman bermain futsal yang menyenangkan dan memuaskan bagi para pemain dan penonton. Lapangan futsal ini juga dapat disewa untuk kegiatan-kegiatan olahraga atau acara lainnya yang memerlukan ruang lapangan dalam ruangan yang luas dan berkualitas.</small></p>
+                    <button class="map">
+                        <h5>Lokasi Lapangan</h5>
+                        <p>Jl. Karet Komp. Patra Permai</p>
+                    </button>
+                    <hr>
+                  </div>
+                </div>
+                <div class="col-sm-5 col-md-4">
+                    <div class="content">
+                        <p>Mulai dari <br><span>Rp 24,000</span> per Sesi</p>
+                        <button class="cek-jadwal" id="cek-jadwal">Cek Jadwal</button>
+                    </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <hr>
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img src="/img/Brand.png" alt="Logo Perusahaan"
+                            style="max-width: 100px;">
+                        <h5 class="mb-4">LapanganKita</h5>
+                        <p>Jl. Karet No. 10 <br>Pontianak Barat <br>Pontianak,
+                            Indonesia</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="mb-4">Ekosistem</h5>
+                        <p><a href="/Sewa" class="text-decoration-none">Sewa
+                                Lapangan</a></p>
+                        <p><a href="/Kompetisi/Cari/"
+                                class="text-decoration-none">Cari Kompetisi</a></p>
+                        <p><a href="/Berita" class="text-decoration-none">Berita</a></p>
+                        <p><a href="/Toko" class="text-decoration-none">Toko</a></p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="mb-4">Hubungi Kami</h5>
+                        <p><a href="#" class="text-decoration-none">Instagram</a></p>
+                        <p><a href="#" class="text-decoration-none">Whatsapp</a></p>
+                        <p><a href="#" class="text-decoration-none">Facebook</a></p>
+                        <p><a href="#" class="text-decoration-none">Gmail</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <!-- My JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
